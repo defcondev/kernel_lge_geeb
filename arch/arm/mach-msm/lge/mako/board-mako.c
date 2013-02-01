@@ -2093,7 +2093,6 @@ static void __init apq8064_mako_init(void)
 #if defined(CONFIG_LGE_NFC_PN544)
         lge_add_nfc_devices();
 #endif
-	lge_add_bcm2079x_device();
 #ifdef CONFIG_LGE_QFPROM_INTERFACE
 	lge_add_qfprom_devices();
 #endif
