@@ -23,6 +23,7 @@
 
 #if defined(CONFIG_LGE_NFC_PN544)
 #include <linux/nfc/pn544_lge.h>
+
 struct i2c_registry {
   u8                     machs;
   int                    bus;
