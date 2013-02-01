@@ -60,8 +60,14 @@ extern int msm8064_pm8921_regulator_pdata_len __devinitdata;
 extern struct gpio_regulator_platform_data
 	apq8064_gpio_regulator_pdata[] __devinitdata;
 
+extern struct gpio_regulator_platform_data
+	mpq8064_gpio_regulator_pdata[] __devinitdata;
+
 extern struct rpm_regulator_platform_data
 	apq8064_rpm_regulator_pdata __devinitdata;
+
+extern struct rpm_regulator_platform_data
+	apq8064_rpm_regulator_pm8921_pdata __devinitdata;
 
 extern struct regulator_init_data msm8064_saw_regulator_pdata_8921_s5;
 extern struct regulator_init_data msm8064_saw_regulator_pdata_8921_s6;
@@ -71,8 +77,10 @@ extern struct regulator_init_data msm8064_saw_regulator_pdata_8821_s1;
 struct mmc_platform_data;
 int __init apq8064_add_sdcc(unsigned int controller,
 		struct mmc_platform_data *plat);
+
 extern void __init lge_add_sound_devices(void);
 extern void __init lge_add_backlight_devices(void);
+
 void apq8064_init_mmc(void);
 void apq8064_init_gpiomux(void);
 void apq8064_init_pmic(void);
