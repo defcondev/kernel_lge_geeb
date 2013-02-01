@@ -21,7 +21,7 @@
 
 #include "board-mako.h"
 
-#if defined(CONFIG_LGE_NFC_PN544)
+#if defined(CONFIG_LGE_NFC)
 #include <linux/nfc/pn544_lge.h>
 
 struct i2c_registry {
