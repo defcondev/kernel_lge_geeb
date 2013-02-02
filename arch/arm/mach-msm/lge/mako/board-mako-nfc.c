@@ -24,13 +24,6 @@
 #if defined(CONFIG_LGE_NFC)
 #include <linux/nfc/pn544_lge.h>
 
-struct i2c_registry {
-  u8                     machs;
-  int                    bus;
-  struct i2c_board_info *info;
-  int                    len;
-};
-
 typedef void (gpio_i2c_init_func_t)(int bus_num);
  
 static struct pn544_i2c_platform_data pn544_i2c_platform_data[] = {
