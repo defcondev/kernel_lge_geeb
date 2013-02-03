@@ -406,11 +406,11 @@ apq8064_pm8921_bms_pdata __devinitdata = {
 	.adjust_soc_low_threshold  = 25,
 	.chg_term_ua  = CHG_TERM_MA * 1000,
 	.eoc_check_soc  = EOC_CHECK_SOC,
-	.bms_support_wlc  = 1,
-	.wlc_term_ua = 110000,
+	.bms_support_wlc  = 0,
+	/*.wlc_term_ua = 110000,
 	.wlc_max_voltage_uv = 4290000,
 	.wlc_is_plugged  = wireless_charger_is_plugged,
-	.first_fixed_iavg_ma  = 500,
+	.first_fixed_iavg_ma  = 500,*/
 };
 
 /* battery data */
