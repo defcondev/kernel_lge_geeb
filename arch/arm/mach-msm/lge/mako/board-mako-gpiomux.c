@@ -681,7 +681,7 @@ static struct msm_gpiomux_config wcnss_5wire_interface[] = {
 	},
 };
 
-#if defined(CONFIG_LGE_NFC_PN544)
+#ifdef CONFIG_LGE_NFC_PN544
 static struct gpiomux_setting nfc_pn544_ven_cfg = {
   .func = GPIOMUX_FUNC_GPIO,
   .drv = GPIOMUX_DRV_2MA,
@@ -758,7 +758,7 @@ void __init apq8064_init_gpiomux(void)
 	msm_gpiomux_install(apq8064_hsic_configs,
 			ARRAY_SIZE(apq8064_hsic_configs));
 #endif
-#if defined(CONFIG_LGE_NFC_PN544)
+#ifdef CONFIG_LGE_NFC_PN544
   msm_gpiomux_install(apq8064_nfc_configs,
       ARRAY_SIZE(apq8064_nfc_configs));
  
