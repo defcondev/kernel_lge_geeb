@@ -66,7 +66,7 @@ struct kcal_platform_data {
 
 int __init lge_get_uart_mode(void);
 
-#ifdef CONFIG_LGE_NFC_PN544
+#ifdef CONFIG_LGE_NFC
 
 void __init lge_add_nfc_devices(void);
 
