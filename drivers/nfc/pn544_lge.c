@@ -11,7 +11,7 @@
 #endif
 /* LGE_CHANGE_E */
 
-#define MAX_BUFFER_SIZE  512
+#define MAX_BUFFER_SIZE	512
 #define PN544_RESET_CMD 	0
 #define PN544_DOWNLOAD_CMD	1
 
