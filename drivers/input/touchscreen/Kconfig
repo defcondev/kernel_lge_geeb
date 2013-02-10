@@ -973,3 +973,4 @@ config TOUCH_REG_MAP_TM2000
 	help
 	  Synaptics Register map TM2000.
 endif
+
