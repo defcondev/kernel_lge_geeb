@@ -351,13 +351,12 @@ CC		= $(srctree)/scripts/gcc-wrapper.py $(REAL_CC)
 
 CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 		  -Wbitwise -Wno-return-void $(CF)
-CFLAGS_MODULE   = -mcpu=cortex-a15 -mfpu=neon -ftree-vectorize
-AFLAGS_MODULE   = -mcpu=cortex-a15 -mfpu=neon -ftree-vectorize
+CFLAGS_MODULE   =
+AFLAGS_MODULE   =
 LDFLAGS_MODULE  =
-CFLAGS_KERNEL	= -mcpu=cortex-a15 -mfpu=neon -ftree-vectorize
-AFLAGS_KERNEL	= -mcpu=cortex-a15 -mfpu=neon -ftree-vectorize
+CFLAGS_KERNEL	= -mcpu=cortex-a9 -march=armv7-a -mfpu=neon -ftree-vectorize -Wno-maybe-uninitialized
+AFLAGS_KERNEL	= -mcpu=cortex-a9 -march=armv7-a -mfpu=neon -ftree-vectorize -Wno-maybe-uninitialized
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
-
 
 # Use LINUXINCLUDE when you must reference the include/ directory.
 # Needed to be compatible with the O= option
